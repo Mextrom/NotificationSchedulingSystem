@@ -1,0 +1,16 @@
+<div class="root">
+  <p *ngIf="!schedule"><em>Loading...</em></p>
+
+  <ul *ngIf="schedule" class="container">
+    <li *ngFor="let sendDate of schedule.notifications; let last = last; let index = index;" class="wrapper">
+      <div class="center box">
+        <span class="material-icons">&#xe916;</span>
+        <span class="text">{{ sendDate | date:'dd.MM.yyyy' }}</span>
+      </div>
+      <div *ngIf="!last" class="center link-box">
+        <span class="text">{{ calculateDateDiff(schedule.notifications[index + 1], sendDate) }}</span>
+        <hr class="link" />
+      </div>
+    </li>
+  </ul>
+</div>

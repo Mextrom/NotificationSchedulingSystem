@@ -1,0 +1,42 @@
+.root {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 20px 20px 0px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+}
+
+.box {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 5px;
+}
+
+.link-box {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.center {
+  text-align: center;
+}
+
+.text{
+  color: gray;
+  font-size: small;
+}
+
+.link {
+  padding: 0px;
+  margin: 0px;
+}
